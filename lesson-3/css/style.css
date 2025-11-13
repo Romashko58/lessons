@@ -25,3 +25,58 @@
 a {
    text-decoration: none;
 }
+
+.preview {
+   background: #F8F8F8;
+   padding: 190px 160px calc(50% - 720px);
+}
+
+.preview__wrap {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1440px;
+}
+
+.preview-content {
+   max-width: 669.03px;
+   width: 100%;
+}
+
+.preview-content__title {
+   font: 58px/63.8px "Fraunces", serif;
+   letter-spacing: 0.2px;
+   color: #1F1F1F;
+}
+
+.preview-content__text {
+   margin-top: 21px;
+   font: 20px/30px "Inter", sans-serif;
+   letter-spacing: 0.2px;
+   color: #1F1F1F;
+   max-width: 447.29px;
+}
+
+.preview-content__link {
+   margin-top: 32px;
+   display: inline-block;
+   padding: 8px 55.73px 8px 56px;
+   background: #0070A0;
+   font: 17px/27px "Inter", sans-serif;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+}
+
+.preview-content__link-2 {
+   margin-left: 30.58px;
+   display: inline-block;
+   padding: 8px 29.18px 8px 15px;
+   font: 17px/27px "Inter", sans-serif;
+   letter-spacing: 0.2px;
+   color: #0070A0;
+
+}
+
+.preview-content__img {
+   margin: -3px 0 -3px 17.71px;
+}
