@@ -1,0 +1,15 @@
+@font-face {
+   font-family: "Fraunces";
+   src: url("../fonts/Fraunces_72pt-Regular.ttf");
+   font-style: normal;
+   font-display: swap;
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: "Inter";
+   src: url("../fonts/Inter_28pt-Regular.ttf");
+   font-style: normal;
+   font-display: swap;
+   font-weight: 400;
+}
