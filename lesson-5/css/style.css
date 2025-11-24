@@ -112,3 +112,79 @@
    letter-spacing: 0;
    color: #5F5F5F;
 }
+
+.popup {
+   width: 293px;
+   position: relative;
+   background-image: url('../image/rodion-background.jpg');
+   background-size: 293px;
+   padding: 13px 31px 16px 27px;
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: -5;
+   transition: .4s ease;
+}
+
+.popup__img {
+   width: 220px;
+   margin-left: 9px;
+
+}
+
+.popup__log {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background: #FF5E00;
+   padding: 15.5px 13.5px;
+   position: absolute;
+   top: 172px;
+   left: 185px;
+
+}
+
+.popup__title {
+   font: 700 23px/140% "OpenSans-bold", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+   margin-top: 20px;
+}
+
+.popup__text {
+   font: 400 17px/150% "OpenSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+#sergey .popup__text {
+   margin-bottom: 26px;
+}
+
+#sergey {
+   background-image: url('../image/sergey-background.jpg');
+
+}
+
+#maria .popup__text {
+   margin-bottom: 26px;
+}
+
+#maria {
+   background-image: url('../image/maria-background.jpg');
+
+}
+
+#eugene {
+   background-image: url('../image/eugene-backround.jpg');
+
+}
+
+#fred .popup__text {
+   margin-bottom: 26px;
+}
+
+#fred {
+   background-image: url('../image/fred-background.jpg');
+
+}
