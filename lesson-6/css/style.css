@@ -16,3 +16,69 @@
 li {
    list-style: none;
 }
+
+.features {
+   width: 100%;
+   padding: 190px calc(50% - 532px) 110px;
+}
+
+.features__wrap {
+   max-width: 1064px;
+}
+
+.features__title {
+   text-align: center;
+   font: 36px/100% "Roboto", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
+}
+
+.list-of-features {
+   margin-top: 69.33px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 24px;
+   flex-wrap: wrap;
+   row-gap: 110px;
+}
+
+.feature {
+   width: 338.66px;
+}
+
+.feature__circle {
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   background: #21F7EC;
+   margin-left: 134px;
+}
+
+.feature__circle#second-circle {
+   background: #33D3BC;
+}
+
+.feature__circle#third-circle {
+   background: #18A5C6;
+}
+
+.feature__circle#fourth-circle {
+   background: #D38F62;
+}
+
+.feature__circle#fifth-circle {
+   background: #F94C43;
+}
+
+.feature__circle#sixth-circle {
+   background: #D399FF;
+}
+
+.feature__text {
+   margin-top: 26px;
+   text-align: center;
+   font: 700 30px/100% "Roboto", sans-serif;
+   letter-spacing: 0px;
+   color: #000000;
+}
