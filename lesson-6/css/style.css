@@ -82,3 +82,70 @@ li {
    letter-spacing: 0px;
    color: #000000;
 }
+
+.interviews {
+   width: 100%;
+   padding: 52px calc(50% - 532px) 52px;
+   position: relative;
+}
+
+.interviews__wrap {
+   max-width: 1064px;
+}
+
+.interviews__title {
+   text-align: center;
+   font: 700 36px/100% "Roboto", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
+}
+
+.interview-cards {
+   margin-top: 102px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 100px;
+}
+
+.card {
+   width: 288px;
+   text-align: center;
+}
+
+.card__img {
+   width: 288px;
+}
+
+.card__quote {
+   margin-top: 35px;
+   font: 700 22px/100% "Roboto", sans-serif;
+   letter-spacing: .6px;
+   color: #000000;
+}
+
+.card__person {
+   margin-top: 40px;
+   font: 400 19px/100% "Roboto", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
+}
+
+.card__link {
+   display: inline-block;
+   margin-top: 44px;
+   font: 700 18px/100% "Roboto", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
+}
+
+.background {
+   position: absolute;
+   background: #F0F0F0;
+   height: 480px;
+   width: 100%;
+   left: 0;
+   top: 426.67px;
+   z-index: -5;
+}
