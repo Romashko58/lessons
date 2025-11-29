@@ -1,0 +1,151 @@
+@font-face {
+   font-family: "Roboto";
+   src: url("../fonts/Roboto-Regular.ttf");
+   font-style: normal;
+   font-display: swap;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+}
+
+li {
+   list-style: none;
+}
+
+.features {
+   width: 100%;
+   padding: 190px calc(50% - 532px) 110px;
+}
+
+.features__wrap {
+   max-width: 1064px;
+}
+
+.features__title {
+   text-align: center;
+   font: 36px/100% "Roboto", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
+}
+
+.list-of-features {
+   margin-top: 69.33px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 24px;
+   flex-wrap: wrap;
+   row-gap: 110px;
+}
+
+.feature {
+   width: 338.66px;
+}
+
+.feature__circle {
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   background: #21F7EC;
+   margin-left: 134px;
+}
+
+.feature__circle#second-circle {
+   background: #33D3BC;
+}
+
+.feature__circle#third-circle {
+   background: #18A5C6;
+}
+
+.feature__circle#fourth-circle {
+   background: #D38F62;
+}
+
+.feature__circle#fifth-circle {
+   background: #F94C43;
+}
+
+.feature__circle#sixth-circle {
+   background: #D399FF;
+}
+
+.feature__text {
+   margin-top: 26px;
+   text-align: center;
+   font: 700 30px/100% "Roboto", sans-serif;
+   letter-spacing: 0px;
+   color: #000000;
+}
+
+.interviews {
+   width: 100%;
+   padding: 52px calc(50% - 532px) 52px;
+   position: relative;
+}
+
+.interviews__wrap {
+   max-width: 1064px;
+}
+
+.interviews__title {
+   text-align: center;
+   font: 700 36px/100% "Roboto", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
+}
+
+.interview-cards {
+   margin-top: 102px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 100px;
+}
+
+.card {
+   width: 288px;
+   text-align: center;
+}
+
+.card__img {
+   width: 288px;
+}
+
+.card__quote {
+   margin-top: 35px;
+   font: 700 22px/100% "Roboto", sans-serif;
+   letter-spacing: .6px;
+   color: #000000;
+}
+
+.card__person {
+   margin-top: 40px;
+   font: 400 19px/100% "Roboto", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
+}
+
+.card__link {
+   display: inline-block;
+   margin-top: 44px;
+   font: 700 18px/100% "Roboto", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
+}
+
+.background {
+   position: absolute;
+   background: #F0F0F0;
+   height: 480px;
+   width: 100%;
+   left: 0;
+   top: 426.67px;
+   z-index: -5;
+}
