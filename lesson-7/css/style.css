@@ -1,5 +1,5 @@
 @font-face {
-   font-family: "Montserrat";
+   font-family: "Montserrat-Medium";
    src: url("../fonts/Montserrat-Medium.ttf");
    font-style: normal;
    font-display: swap;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-   font-family: "Montserrat";
+   font-family: "Montserrat-Bold";
    src: url("../fonts/Montserrat-Bold.ttf");
    font-style: normal;
    font-display: swap;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-   font-family: "Montserrat";
+   font-family: "Montserrat-SemiBold";
    src: url("../fonts/Montserrat-SemiBold.ttf");
    font-style: normal;
    font-display: swap;
@@ -28,4 +28,20 @@
    padding: 0;
    border: 0;
    outline: 0;
+}
+
+.user-form {
+   background: #F1F0ED;
+   padding: 46px calc(50% - 310px) 0;
+}
+
+.user-form__wrap {
+   max-width: 620px;
+
+}
+
+.user-form__title {
+   font: 30px/100% "Montserrat-Bold", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
 }
