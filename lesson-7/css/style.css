@@ -32,7 +32,15 @@
 
 .user-form {
    background: #F1F0ED;
-   padding: 46px calc(50% - 310px) 0;
+   padding: 46px calc(50% - 310px) 48px;
+   position: relative;
+}
+
+.close {
+   position: absolute;
+   cursor: pointer;
+   top: 22px;
+   right: 20px;
 }
 
 .user-form__wrap {
@@ -42,6 +50,31 @@
 
 .user-form__title {
    font: 30px/100% "Montserrat-Bold", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
+}
+
+.user-info-form {
+   margin-top: 43px;
+
+}
+
+.form-field {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 30px;
+
+}
+
+.form-field input {
+   height: 41px;
+   background: #F1F0ED;
+   border-bottom: 1px solid #DAD6CE;
+   font-size: 17px;
+}
+
+.form-field__title {
+   font: 17px/100% "Montserrat-Medium", sans-serif;
    letter-spacing: 0;
    color: #000000;
 }
