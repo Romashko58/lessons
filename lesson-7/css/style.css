@@ -78,3 +78,61 @@
    letter-spacing: 0;
    color: #000000;
 }
+
+.send {
+   display: flex;
+   justify-content: space-between;
+   gap: 50px;
+   position: relative;
+}
+
+.checkbox-field {
+   max-width: 330px;
+   display: flex;
+   gap: 10px;
+}
+
+.checkbox-field__title {
+   font: 17px/24px "Montserrat-SemiBold", sans-serif;
+   letter-spacing: -1%;
+   color: #000000;
+   border-bottom: 1px solid #EDBEAE;
+   display: inline-block;
+}
+
+.submit-btn {
+   width: 249px;
+   height: 49px;
+   font: 14px/100% "Montserrat-Bold", sans-serif;
+   letter-spacing: 0%;
+   color: #E5481D;
+   cursor: pointer;
+
+}
+
+.border {
+   position: absolute;
+   left: 372px;
+   pointer-events: none;
+}
+
+.checkbox-field input {
+   display: none;
+}
+
+.checkbox-field__box {
+   position: relative;
+   cursor: pointer;
+}
+
+.check-mark {
+   position: absolute;
+   left: 5px;
+   top: -6px;
+   opacity: 0;
+   transition: opacity 0.2s ease;
+}
+
+.checkbox-field input:checked+.checkbox-field__box .check-mark {
+   opacity: 1;
+}
