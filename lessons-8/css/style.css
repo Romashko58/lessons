@@ -75,3 +75,38 @@ li {
    color: #F8F5F4;
    text-transform: lowercase;
 }
+
+.footer__information {
+   margin-top: clamp(48px, 10vw, 96px);
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.connection {
+   display: flex;
+   flex-direction: column;
+   max-width: 355px;
+   gap: clamp(16px, 2vw, 24px);
+
+}
+
+.connection__block {
+   display: flex;
+   align-items: center;
+   gap: clamp(0px, 5vw, 24px);
+   flex-wrap: wrap;
+}
+
+.connection-block__title {
+   font: 700 12px/120% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #8C8C8C;
+   text-transform: uppercase;
+}
+
+.connection-block__text {
+   font: 700 16px/150% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
