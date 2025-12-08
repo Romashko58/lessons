@@ -110,3 +110,22 @@ li {
    letter-spacing: 0;
    color: #FFFFFF;
 }
+
+.menu__list {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   margin-left: clamp(0px, 10vw, 205px);
+}
+
+.menu-list__el {
+   text-decoration: none;
+   font: 700 14px/120% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+   text-transform: uppercase;
+}
+
+li:nth-child(3) .menu-list__el {
+   color: #4F8FF0;
+}
