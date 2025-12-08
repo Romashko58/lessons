@@ -211,3 +211,27 @@ li:nth-child(3) .menu-list__el {
    color: #FFFFFF;
    text-decoration: none;
 }
+
+@media (max-width: 840px) {
+
+   .company-name__text {
+      display: none;
+   }
+
+   .footer__menu {
+      display: none;
+   }
+
+   .connection-block__text {
+      font-size: 14px;
+   }
+
+   .question {
+      max-width: 334px;
+   }
+
+   .connection__block svg {
+      width: 45px;
+   }
+
+}
