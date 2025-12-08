@@ -129,3 +129,57 @@ li {
 li:nth-child(3) .menu-list__el {
    color: #4F8FF0;
 }
+
+.question {
+   margin-left: clamp(0px, 10vw, 152px);
+   max-width: 424px;
+}
+
+.question-specialist {
+   display: flex;
+   align-items: center;
+   gap: clamp(0px, 5vw, 24px);
+   flex-wrap: wrap;
+}
+
+.question-specialist__img {
+   width: 65px;
+}
+
+.question-specialist__info {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+}
+
+.question-specialist__name {
+   font: 700 20px/150% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.question-specialist__job-title {
+   font: 300 14px/120% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.question__information {
+   margin-top: 16px;
+   font: 400 14px/150% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.question__btn {
+   display: inline-block;
+   padding: 16px 24px;
+   background-color: #4F8FF0;
+   color: #FFFFFF;
+   text-decoration: none;
+   margin-top: 24px;
+   font: 900 14px/120% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   text-transform: uppercase;
+
+}
