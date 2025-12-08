@@ -235,3 +235,22 @@ li:nth-child(3) .menu-list__el {
    }
 
 }
+
+@media (max-width: 390px) {
+
+   .footer__company-name {
+      justify-content: center;
+   }
+
+   .footer__information {
+      flex-direction: column;
+   }
+
+   .question {
+      margin: 40px 0 0 0;
+   }
+
+   .footer__legal-case {
+      flex-direction: column;
+   }
+}
