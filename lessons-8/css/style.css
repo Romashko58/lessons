@@ -183,3 +183,31 @@ li:nth-child(3) .menu-list__el {
    text-transform: uppercase;
 
 }
+
+.footer__legal {
+   background: #181818;
+}
+
+.footer__legal-case {
+   margin: clamp(40px, 5vw, 80px) auto 0 auto;
+   padding: 16px 0;
+   max-width: 1320px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: clamp(10px, 5vw, 847px);
+   flex-wrap: wrap;
+}
+
+.legal__copy {
+   font: 400 14px/120% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.legal__privacy {
+   font: 400 14px/120% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+   text-decoration: none;
+}
