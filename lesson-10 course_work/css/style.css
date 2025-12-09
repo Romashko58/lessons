@@ -92,5 +92,143 @@ a {
       background: #AB4949;
 
    }
+}
 
+.banner {
+   padding: 306px 0 185px 0;
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/background_section-1.png") center/cover no-repeat;
+}
+
+.banner__wrap {
+   max-width: 1240px;
+   margin-left: auto;
+   margin-right: 200px;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 100px;
+}
+
+.banner__information {
+   max-width: 670px;
+}
+
+.information__img {
+   width: 170px;
+}
+
+.information__title {
+   margin-top: 73px;
+   font: 48px/100% "Raleway-Medium", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+   position: relative;
+}
+
+.information__title::before {
+   content: "";
+   width: 170px;
+   height: 1px;
+   background: #FFFFFF;
+   display: block;
+   position: absolute;
+   left: 0;
+   bottom: -55px;
+}
+
+.information__text {
+   margin-top: 97px;
+   font: 18px/100% "Raleway-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.information__btn {
+   margin-top: 42px;
+   padding: 18px;
+   display: inline-block;
+   width: 270px;
+   height: 58px;
+   border: 2px solid #FFFFFF;
+   text-align: center;
+   font: 18px/100% "OpenSans-SemiBold", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+   transition: all 0.3s ease;
+
+   &:hover {
+      border-color: #EC7979;
+      color: #EC7979;
+   }
+
+   &:active {
+      background: #AB4949;
+      border-color: #AB4949;
+      color: #FFFFFF;
+   }
+
+}
+
+.banner__login {
+   margin-top: 27px;
+   width: 470px;
+   background: #FFFFFF;
+   border-radius: 10px;
+}
+
+.login__wrap {
+   padding: 36px 50px 75px;
+}
+
+.login__title {
+   text-align: center;
+   font: 24px/100% "OpenSans-Bold", sans-serif;
+   letter-spacing: 0;
+   color: #333333;
+   text-transform: uppercase;
+}
+
+.login__ch {
+   color: #EC7979;
+   text-transform: uppercase;
+}
+
+.login__wrap input {
+   border-bottom: 1px solid #BDBDBD;
+}
+
+.login__input {
+   margin-top: 75px;
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+}
+
+.input__field {
+   height: 40px;
+   display: flex;
+   flex-direction: column;
+   font: 14px/100% "OpenSans-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #BDBDBD;
+}
+
+.login__btn {
+   width: 100%;
+   height: 60px;
+   background: #EC7979;
+   border-radius: 0 0 10px 10px;
+   font: 15px/100% "OpenSans-SemiBold", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+   transition: all 0.3s ease;
+
+   &:hover {
+      background: #AB4949;
+   }
+
+   &:active {
+      background: #EC7979;
+      box-shadow: inset 0 0 10px #AB4949;
+   }
 }
