@@ -62,3 +62,65 @@
    grid-row: 3/5;
    margin-left: 120px;
 }
+
+.investments-information__title {
+   font: 24px/100% "Montserrat-SemiBold", sans-serif;
+   letter-spacing: 0;
+   color: #0A2730;
+   text-transform: uppercase;
+}
+
+.investments-information__text {
+   margin-top: 20px;
+   font: 20px/100% "Montserrat-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #0A2730;
+}
+
+.investments__key {
+   background: #0083FF;
+   padding: 20px 40px;
+   border-radius: 12px;
+}
+
+.investments-key__title {
+   font: 48px/100% "Montserrat-Medium", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.investments-key__text {
+   margin-top: 12px;
+   font: 20px/100% "Montserrat-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.investments-key__title-add {
+   font: 20px/100% "Montserrat-Medium", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.investments__advantages {
+   border: 1px solid #0083FF;
+   border-radius: 12px;
+   padding: 40px 40px;
+
+   &:nth-child(4) {
+      padding-right: 24.86px;
+   }
+
+   >img {
+      width: 40px;
+   }
+}
+
+.investments-advantages__title {
+   display: block;
+   margin-top: 20px;
+   font: 24px/100% "Montserrat-SemiBold", sans-serif;
+   letter-spacing: 0;
+   color: #0083FF;
+   text-transform: uppercase;
+}
