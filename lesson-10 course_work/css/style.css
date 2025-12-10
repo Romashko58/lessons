@@ -232,3 +232,38 @@ a {
       box-shadow: inset 0 0 10px #AB4949;
    }
 }
+
+.social {
+   background: #F8EFEF;
+   padding: 32px 0 18px;
+}
+
+.social__wrap {
+   margin: 0 auto;
+   max-width: 1170px;
+   display: flex;
+   gap: 30px;
+}
+
+
+.social-info__title {
+   font: 24px/100% "OpenSans-Bold", sans-serif;
+   letter-spacing: 0;
+   color: #333333
+}
+
+.social-info__text {
+   margin-top: 16px;
+   font: 18px/100% "Raleway-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #86878B;
+}
+
+.social__img {
+   width: 70px;
+   transition: all 0.3s ease;
+
+   &:hover {
+      width: 75px;
+   }
+}
