@@ -53,7 +53,7 @@
       <section class="social">
          <div class="social__wrap">
             <div class="social__info">
-               <span class="social-info__title">Social Media</span>
+               <h3 class="social-info__title">Social Media</h3>
                <p class="social-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Aenean euismod bibendum laoreet.</p>
             </div>
@@ -128,7 +128,7 @@
       </section>
       <section class="about">
          <div class="about__wrap">
-            <span class="about__title">WHY THIS IS AWESOME</span>
+            <h4 class="about__title">WHY THIS IS AWESOME</h4>
             <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="about__cards">
                <div class="about-cards__card">
@@ -154,11 +154,11 @@
       </section>
       <section class="pricing">
          <div class="pricing__wrap">
-            <span class="pricing__title">pricing options</span>
+            <h5 class="pricing__title">pricing options</h5>
             <p class="pricing__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="pricing__cards">
                <div class="pricing__card">
-                  <h3 class="pricing-card__title">Basic</h3>
+                  <div class="pricing-card__title">Basic</div>
                   <div class="pricing-card__price">$10</div>
                   <div class="pricing-card__subtitle">Free for life</div>
                   <ul class="pricing-card__features">
@@ -171,7 +171,7 @@
                   </ul>
                </div>
                <div class="pricing__card">
-                  <h3 class="pricing-card__title">Optima</h3>
+                  <div class="pricing-card__title">Optima</div>
                   <div class="pricing-card__price">$20</div>
                   <div class="pricing-card__subtitle">Free for life</div>
                   <ul class="pricing-card__features">
@@ -184,7 +184,7 @@
                   </ul>
                </div>
                <div class="pricing__card">
-                  <h3 class="pricing-card__title">Pro</h3>
+                  <div class="pricing-card__title">Pro</div>
                   <div class="pricing-card__price">$30</div>
                   <div class="pricing-card__subtitle">Free for life</div>
                   <ul class="pricing-card__features">
@@ -200,23 +200,23 @@
          </div>
       </section>
    </main>
-</body>
-<script>
-   const buttons = document.querySelectorAll(".tab-btn");
-   const contents = document.querySelectorAll(".tab-content");
+   <script>
+      const buttons = document.querySelectorAll(".tab-btn");
+      const contents = document.querySelectorAll(".tab-content");
 
-   buttons.forEach(btn => {
-      btn.addEventListener("click", () => {
-         // убрать активность у всех кнопок и контента
-         buttons.forEach(b => b.classList.remove("active"));
-         contents.forEach(c => c.classList.remove("active"));
+      buttons.forEach(btn => {
+         btn.addEventListener("click", () => {
+            // убрать активность у всех кнопок и контента
+            buttons.forEach(b => b.classList.remove("active"));
+            contents.forEach(c => c.classList.remove("active"));
 
-         // добавить активность выбранной кнопке и контенту
-         btn.classList.add("active");
-         document.getElementById(btn.dataset.tab).classList.add("active");
+            // добавить активность выбранной кнопке и контенту
+            btn.classList.add("active");
+            document.getElementById(btn.dataset.tab).classList.add("active");
+         });
       });
-   });
 
-</script>
+   </script>
+</body>
 
 </html>
