@@ -38,6 +38,14 @@
    font-display: swap;
 }
 
+@font-face {
+   font-family: "Raleway-Bold";
+   src: url("../fonts/Raleway-Bold.ttf");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
 * {
    box-sizing: border-box;
    margin: 0;
@@ -434,4 +442,97 @@ a {
    font: 18px/100% "Raleway-Regular", sans-serif;
    letter-spacing: 0;
    color: #000000;
+}
+
+.pricing {
+   padding: 82px 0 83px 0;
+   background: #F5F5F5;
+}
+
+.pricing__wrap {
+   margin: 0 auto;
+   max-width: 1170px;
+   text-align: center;
+}
+
+.pricing__title {
+   font: 36px/100% "Raleway-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
+   position: relative;
+   text-transform: uppercase;
+}
+
+.pricing__title::before {
+   content: "";
+   width: 170px;
+   height: 1px;
+   background: #EC7979;
+   display: block;
+   position: absolute;
+   left: 80px;
+   bottom: -40px;
+}
+
+.pricing__text {
+   margin-top: 80px;
+   font: 18px/100% "Raleway-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #86878B;
+}
+
+.pricing__cards {
+   margin-top: 79px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+}
+
+.pricing__card {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   max-width: 370px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+   &:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 4px 10px 0 #33333333;
+   }
+}
+
+.pricing-card__title {
+   padding: 18px 0;
+   background: #333333;
+   border: 2px solid #F5F5F5;
+   font: 24px/100% "OpenSans-Bold", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.pricing-card__price {
+   padding: 32px 0;
+   background: #333333;
+   border: 2px solid #F5F5F5;
+   font: 36px/100% "Raleway-Bold", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.pricing-card__subtitle {
+   padding: 14.5px 0;
+   background: #333333;
+   border: 2px solid #F5F5F5;
+   font: 18px/100% "Raleway-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF80;
+}
+
+.pricing-card__el {
+   padding: 14.5px 0;
+   background: #FFFFFF;
+   border: 2px solid #F5F5F5;
+   font: 18px/100% "Raleway-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #86878B;
 }
