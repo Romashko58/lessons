@@ -80,7 +80,70 @@
             </a>
          </div>
       </section>
+      <section class="tabs">
+         <div class="tabs__wrap">
+            <div class="tab-buttons">
+               <button class="tab-btn active" data-tab="tab1">tab 1</button>
+               <button class="tab-btn" data-tab="tab2">tab 2</button>
+               <button class="tab-btn" data-tab="tab3">tab 3</button>
+            </div>
+
+            <div class="tab-content active" id="tab1">
+               <div class="tab-content__wrap">
+                  <span class="tab-content__title">Tabs with soft transitioning effect.</span>
+                  <p class="tab-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                     bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                     sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                  <p class="tab-content__text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                     bibendum laoreet.</p>
+                  <a href="#" download class="tab-content__btn">Download</a>
+               </div>
+               <img class="tab-content__img" src="image/tab-1.png" alt="">
+            </div>
+            <div class="tab-content" id="tab2">
+               <div class="tab-content__wrap">
+                  <span class="tab-content__title">Tabs with soft transitioning effect.</span>
+                  <p class="tab-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                     bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                     sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                  <p class="tab-content__text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                     bibendum laoreet.</p>
+                  <a href="#" download class="tab-content__btn">Download</a>
+               </div>
+               <img class="tab-content__img" src="image/tab-2.jpg" alt="">
+            </div>
+            <div class="tab-content" id="tab3">
+               <div class="tab-content__wrap">
+                  <span class="tab-content__title">Tabs with soft transitioning effect.</span>
+                  <p class="tab-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                     bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                     sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                  <p class="tab-content__text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                     bibendum laoreet.</p>
+                  <a href="#" download class="tab-content__btn">Download</a>
+               </div>
+               <img class="tab-content__img" src="image/tab-3.jpg" alt="">
+            </div>
+         </div>
+      </section>
    </main>
 </body>
+<script>
+   const buttons = document.querySelectorAll(".tab-btn");
+   const contents = document.querySelectorAll(".tab-content");
+
+   buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+         // убрать активность у всех кнопок и контента
+         buttons.forEach(b => b.classList.remove("active"));
+         contents.forEach(c => c.classList.remove("active"));
+
+         // добавить активность выбранной кнопке и контенту
+         btn.classList.add("active");
+         document.getElementById(btn.dataset.tab).classList.add("active");
+      });
+   });
+
+</script>
 
 </html>
