@@ -371,3 +371,67 @@ a {
    }
 
 }
+
+.about {
+   padding: 118px 0 110px;
+}
+
+.about__wrap {
+   margin: 0 auto;
+   max-width: 1170px;
+   text-align: center;
+}
+
+.about__title {
+   font: 36px/100% "Raleway-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
+   position: relative;
+}
+
+.about__title::before {
+   content: "";
+   width: 170px;
+   height: 1px;
+   background: #EC7979;
+   display: block;
+   position: absolute;
+   left: 100px;
+   bottom: -40px;
+}
+
+.about__text {
+   margin-top: 80px;
+   font: 18px/100% "Raleway-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #86878B;
+}
+
+.about__cards {
+   margin-top: 92px;
+   display: flex;
+   gap: 27px;
+}
+
+.about-cards__card {
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+   align-items: center;
+}
+
+.card__img {
+   width: 92px;
+}
+
+.card__title {
+   font: 24px/100% "OpenSans-Bold", sans-serif;
+   letter-spacing: 0;
+   color: #000000
+}
+
+.card__text {
+   font: 18px/100% "Raleway-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
+}
