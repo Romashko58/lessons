@@ -62,6 +62,81 @@ a {
    text-decoration: none;
 }
 
+.contact__text,
+.reviews-card__comment,
+.reviews__text,
+.pricing-card__el,
+.pricing__text,
+.about__text,
+.social-info__text {
+   font: 18px/100% "Raleway-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #86878B;
+}
+
+.information__btn,
+.tab-content__btn,
+.banner-2__btn,
+.send__btn {
+   font: 18px/100% "OpenSans-SemiBold", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.send__message,
+.send__field,
+.input__field {
+   font: 14px/100% "OpenSans-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #BDBDBD;
+}
+
+.tab-content__text,
+.tab-content__text-2,
+.card__text,
+.commentator-info__post {
+   font: 18px/100% "Raleway-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
+}
+
+.site-footer__copyright,
+.pricing-card__subtitle {
+   font: 18px/100% "Raleway-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF80;
+}
+
+.commentator-info__name,
+.card__title {
+   font: 24px/100% "OpenSans-Bold", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
+}
+
+.about__title,
+.pricing__title,
+.reviews__title,
+.contact__title {
+   font: 36px/100% "Raleway-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #000000;
+}
+
+.information__text,
+.banner-2__text {
+   font: 18px/100% "Raleway-Regular", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.social-info__title,
+.login__title {
+   font: 24px/100% "OpenSans-Bold", sans-serif;
+   letter-spacing: 0;
+   color: #333333
+}
+
 .site-header {
    padding: 0px calc(50% - 620px);
    background: #000000;
@@ -77,6 +152,7 @@ a {
 
 .menu__list {
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-between;
    align-items: center;
 
@@ -112,6 +188,7 @@ a {
    margin-left: auto;
    margin-right: 200px;
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-between;
    align-items: flex-start;
    gap: 100px;
@@ -146,9 +223,6 @@ a {
 
 .information__text {
    margin-top: 97px;
-   font: 18px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #FFFFFF;
 }
 
 .information__btn {
@@ -159,9 +233,6 @@ a {
    height: 58px;
    border: 2px solid #FFFFFF;
    text-align: center;
-   font: 18px/100% "OpenSans-SemiBold", sans-serif;
-   letter-spacing: 0;
-   color: #FFFFFF;
    transition: all 0.3s ease;
 
    &:hover {
@@ -190,9 +261,6 @@ a {
 
 .login__title {
    text-align: center;
-   font: 24px/100% "OpenSans-Bold", sans-serif;
-   letter-spacing: 0;
-   color: #333333;
    text-transform: uppercase;
 }
 
@@ -216,9 +284,6 @@ a {
    height: 40px;
    display: flex;
    flex-direction: column;
-   font: 14px/100% "OpenSans-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #BDBDBD;
 }
 
 .login__btn {
@@ -250,21 +315,12 @@ a {
    margin: 0 auto;
    max-width: 1170px;
    display: flex;
+   flex-wrap: wrap;
    gap: 30px;
-}
-
-
-.social-info__title {
-   font: 24px/100% "OpenSans-Bold", sans-serif;
-   letter-spacing: 0;
-   color: #333333
 }
 
 .social-info__text {
    margin-top: 16px;
-   font: 18px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #86878B;
 }
 
 .social__img {
@@ -272,7 +328,7 @@ a {
    transition: all 0.3s ease;
 
    &:hover {
-      width: 75px;
+      transform: translateY(-5px);
    }
 }
 
@@ -344,16 +400,10 @@ a {
 
 .tab-content__text {
    margin-top: 57px;
-   font: 18px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #000000;
 }
 
 .tab-content__text-2 {
    margin-top: 26px;
-   font: 18px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #000000;
 }
 
 .tab-content__btn {
@@ -364,9 +414,6 @@ a {
    height: 58px;
    background: #EC7979;
    text-align: center;
-   font: 18px/100% "OpenSans-SemiBold", sans-serif;
-   letter-spacing: 0;
-   color: #FFFFFF;
    transition: background .3s ease;
 
    &:hover {
@@ -391,9 +438,6 @@ a {
 }
 
 .about__title {
-   font: 36px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #000000;
    position: relative;
 }
 
@@ -410,9 +454,6 @@ a {
 
 .about__text {
    margin-top: 80px;
-   font: 18px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #86878B;
 }
 
 .about__cards {
@@ -432,18 +473,6 @@ a {
    width: 92px;
 }
 
-.card__title {
-   font: 24px/100% "OpenSans-Bold", sans-serif;
-   letter-spacing: 0;
-   color: #000000
-}
-
-.card__text {
-   font: 18px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #000000;
-}
-
 .pricing {
    padding: 82px 0 83px 0;
    background: #F5F5F5;
@@ -456,9 +485,6 @@ a {
 }
 
 .pricing__title {
-   font: 36px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #000000;
    position: relative;
    text-transform: uppercase;
 }
@@ -476,9 +502,6 @@ a {
 
 .pricing__text {
    margin-top: 80px;
-   font: 18px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #86878B;
 }
 
 .pricing__cards {
@@ -523,18 +546,12 @@ a {
    padding: 14.5px 0;
    background: #333333;
    border: 2px solid #F5F5F5;
-   font: 18px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #FFFFFF80;
 }
 
 .pricing-card__el {
    padding: 14.5px 0;
    background: #FFFFFF;
    border: 2px solid #F5F5F5;
-   font: 18px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #86878B;
 }
 
 .reviews {
@@ -548,9 +565,6 @@ a {
 }
 
 .reviews__title {
-   font: 36px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #000000;
    position: relative;
    text-transform: uppercase;
 }
@@ -568,9 +582,6 @@ a {
 
 .reviews__text {
    margin-top: 80px;
-   font: 18px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #86878B;
 }
 
 .reviews__cards {
@@ -585,9 +596,6 @@ a {
 
 .reviews-card__comment {
    margin-top: 83px;
-   font: 18px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #86878B;
    padding: 37.5px 25px;
    background: #E2E2E2;
    border-radius: 10px;
@@ -626,18 +634,6 @@ a {
    align-items: flex-start;
 }
 
-.commentator-info__name {
-   font: 24px/100% "OpenSans-Bold", sans-serif;
-   letter-spacing: 0;
-   color: #000000;
-}
-
-.commentator-info__post {
-   font: 18px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #000000;
-}
-
 .banner-2 {
    padding: 70px 0;
    background: linear-gradient(#00000080, #00000080), url("../image/background_banner-2.jpg") center/cover no-repeat;
@@ -670,9 +666,6 @@ a {
 
 .banner-2__text {
    margin-top: 80px;
-   font: 18px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #FFFFFF;
 }
 
 .banner-2__btn {
@@ -683,9 +676,6 @@ a {
    height: 58px;
    border: 2px solid #FFFFFF;
    text-align: center;
-   font: 18px/100% "OpenSans-SemiBold", sans-serif;
-   letter-spacing: 0;
-   color: #FFFFFF;
    transition: all 0.3s ease;
 
    &:hover {
@@ -712,9 +702,6 @@ a {
 }
 
 .contact__title {
-   font: 36px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #000000;
    position: relative;
    text-transform: uppercase;
 }
@@ -732,9 +719,6 @@ a {
 
 .contact__text {
    margin-top: 80px;
-   font: 18px/100% "Raleway-Regular", sans-serif;
-   letter-spacing: 0;
-   color: #86878B;
 }
 
 .contact__send {
@@ -759,8 +743,6 @@ a {
 .send__field {
    display: flex;
    flex-direction: column;
-   font: 14px/100% "OpenSans-Regular", sans-serif;
-   color: #BDBDBD;
    align-items: flex-start;
    height: 38px;
 }
@@ -778,8 +760,6 @@ a {
    flex-direction: column;
    flex: 1 1 570px;
    align-items: flex-start;
-   font: 14px "OpenSans-Regular", sans-serif;
-   color: #BDBDBD;
 }
 
 .send__message textarea {
@@ -796,9 +776,6 @@ a {
    width: 370px;
    height: 58px;
    background: #EC7979;
-   font: 18px/100% "OpenSans-SemiBold", sans-serif;
-   letter-spacing: 0;
-   color: #FFFFFF;
    transition: all 0.3s ease;
 
    &:hover {
@@ -809,4 +786,45 @@ a {
       background: #EC7979;
       box-shadow: inset 0 0 10px #AB4949;
    }
+}
+
+.site-footer {
+   padding: 35px 0;
+   background: #000000;
+}
+
+.site-footer__wrap {
+   margin: 0 auto;
+   max-width: 570px;
+   text-align: center;
+}
+
+.footer-social__wrap {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 32.8px;
+}
+
+.footer-social__img {
+   width: 53.2px;
+   display: inline-block;
+
+   &:hover {
+      animation: spin 0.5s linear forwards;
+   }
+
+}
+
+@keyframes spin {
+   from {
+      transform: rotate(0deg);
+   }
+
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.site-footer__copyright {
+   margin-top: 27.8px;
 }
