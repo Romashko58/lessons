@@ -257,7 +257,33 @@
             <a href="#" download class="banner-2__btn">Download</a>
          </div>
       </section>
-
+      <section class="contact">
+         <div class="contact__wrap">
+            <h2 class="contact__title">contact us</h2>
+            <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <form class="contact__send">
+               <div class="send__wrap">
+                  <div class="send__input">
+                     <div class="send__field"><label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                     </div>
+                     <div class="send__field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                     </div>
+                     <div class="send__field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                     </div>
+                  </div>
+                  <div class="send__field"><label for="message">Message</label>
+                     <textarea id="message" name="message" class="send__message" rows="5"></textarea>
+                  </div>
+               </div>
+               <button class="send__btn" type="submit">Send Message</button>
+            </form>
+         </div>
+      </section>
    </main>
    <script>
       const buttons = document.querySelectorAll(".tab-btn");
