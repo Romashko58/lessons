@@ -349,7 +349,67 @@
          menu.classList.toggle('open');
          menuBtn.classList.toggle('active');
       });
+      let reviewsSwiper = null;
 
+      function initReviewsSwiper() {
+         const cardsContainer = document.getElementById('reviewsCards');
+
+         if (window.innerWidth <= 828 && !reviewsSwiper) {
+            const swiperEl = document.createElement('div');
+            swiperEl.className = 'swiper reviews-swiper';
+
+            const wrapperEl = document.createElement('div');
+            wrapperEl.className = 'swiper-wrapper';
+
+            const cards = Array.from(cardsContainer.children);
+            cards.forEach(card => {
+               const slide = document.createElement('div');
+               slide.className = 'swiper-slide';
+               slide.appendChild(card);
+               wrapperEl.appendChild(slide);
+            });
+
+            const paginationEl = document.createElement('div');
+            paginationEl.className = 'swiper-pagination';
+
+            swiperEl.appendChild(wrapperEl);
+            swiperEl.appendChild(paginationEl);
+
+            cardsContainer.replaceWith(swiperEl);
+
+            reviewsSwiper = new Swiper('.reviews-swiper', {
+               slidesPerView: 1,
+               spaceBetween: 30,
+               pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+               },
+            });
+         }
+
+         if (window.innerWidth > 828 && reviewsSwiper) {
+            const swiperEl = document.querySelector('.reviews-swiper');
+            const wrapperEl = swiperEl.querySelector('.swiper-wrapper');
+            const slides = Array.from(wrapperEl.children);
+
+            reviewsSwiper.destroy(true, true);
+            reviewsSwiper = null;
+
+            const restored = document.createElement('div');
+            restored.className = 'reviews__cards';
+            restored.id = 'reviewsCards';
+
+            slides.forEach(slide => {
+               const card = slide.firstElementChild;
+               if (card) restored.appendChild(card);
+            });
+
+            swiperEl.replaceWith(restored);
+         }
+      }
+
+      initReviewsSwiper();
+      window.addEventListener('resize', initReviewsSwiper);
    </script>
 </body>
 
