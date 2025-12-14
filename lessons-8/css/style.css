@@ -1,0 +1,256 @@
+@font-face {
+   font-family: "NunitoSans";
+   src: url("../fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf");
+   font-style: normal;
+   font-display: swap;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+}
+
+li {
+   list-style: none;
+}
+
+.footer {
+   background: #222222;
+
+}
+
+.footer__wrap {
+   padding: clamp(40px, 6vw, 80px) 0 0;
+   max-width: 1320px;
+   margin: 0 auto;
+
+}
+
+.footer__company-name {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: clamp(24px, 10vw, 182px);
+   position: relative;
+
+}
+
+.footer__company-name::before {
+   content: "";
+   width: 100%;
+   height: 1px;
+   background: #8C8C8C;
+   left: 0;
+   right: 0;
+   top: clamp(86px, 8vw, 110px);
+   position: absolute;
+
+}
+
+.company-name {
+   display: flex;
+   flex-direction: column;
+}
+
+.company-name__title-first {
+   font: 900 28px/150% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #4F8FF0;
+   text-transform: uppercase;
+}
+
+.company-name__title-second {
+   font: 900 20px/150% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+   text-transform: lowercase;
+}
+
+.company-name__text {
+   font: 400 16px/120% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #F8F5F4;
+   text-transform: lowercase;
+}
+
+.footer__information {
+   margin-top: clamp(48px, 10vw, 96px);
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.connection {
+   display: flex;
+   flex-direction: column;
+   max-width: 355px;
+   gap: clamp(16px, 2vw, 24px);
+
+}
+
+.connection__block {
+   display: flex;
+   align-items: center;
+   gap: clamp(0px, 5vw, 24px);
+   flex-wrap: wrap;
+}
+
+.connection-block__title {
+   font: 700 12px/120% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #8C8C8C;
+   text-transform: uppercase;
+}
+
+.connection-block__text {
+   font: 700 16px/150% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.menu__list {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   margin-left: clamp(0px, 10vw, 205px);
+}
+
+.menu-list__el {
+   text-decoration: none;
+   font: 700 14px/120% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+   text-transform: uppercase;
+}
+
+li:nth-child(3) .menu-list__el {
+   color: #4F8FF0;
+}
+
+.question {
+   margin-left: clamp(0px, 10vw, 152px);
+   max-width: 424px;
+}
+
+.question-specialist {
+   display: flex;
+   align-items: center;
+   gap: clamp(0px, 5vw, 24px);
+   flex-wrap: wrap;
+}
+
+.question-specialist__img {
+   width: 65px;
+}
+
+.question-specialist__info {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+}
+
+.question-specialist__name {
+   font: 700 20px/150% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.question-specialist__job-title {
+   font: 300 14px/120% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.question__information {
+   margin-top: 16px;
+   font: 400 14px/150% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.question__btn {
+   display: inline-block;
+   padding: 16px 24px;
+   background-color: #4F8FF0;
+   color: #FFFFFF;
+   text-decoration: none;
+   margin-top: 24px;
+   font: 900 14px/120% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   text-transform: uppercase;
+
+}
+
+.footer__legal {
+   background: #181818;
+}
+
+.footer__legal-case {
+   margin: clamp(40px, 5vw, 80px) auto 0 auto;
+   padding: 16px 0;
+   max-width: 1320px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: clamp(10px, 5vw, 847px);
+   flex-wrap: wrap;
+}
+
+.legal__copy {
+   font: 400 14px/120% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+}
+
+.legal__privacy {
+   font: 400 14px/120% "NunitoSans", sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+   text-decoration: none;
+}
+
+@media (max-width: 840px) {
+
+   .company-name__text {
+      display: none;
+   }
+
+   .footer__menu {
+      display: none;
+   }
+
+   .connection-block__text {
+      font-size: 14px;
+   }
+
+   .question {
+      max-width: 334px;
+   }
+
+   .connection__block svg {
+      width: 45px;
+   }
+
+}
+
+@media (max-width: 390px) {
+
+   .footer__company-name {
+      justify-content: center;
+   }
+
+   .footer__information {
+      flex-direction: column;
+   }
+
+   .question {
+      margin: 40px 0 0 0;
+   }
+
+   .footer__legal-case {
+      flex-direction: column;
+   }
+}
