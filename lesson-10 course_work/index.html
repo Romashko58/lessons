@@ -18,11 +18,11 @@
          <a href="#"><img class="site-header__img" src="image/logo.svg" alt="logo image"></a>
          <nav class="site-header__menu">
             <ul class="menu__list">
-               <li><a class="menu-list__el" href="#">Features</a></li>
-               <li><a class="menu-list__el" href="#">About</a></li>
-               <li><a class="menu-list__el" href="#">Pricing</a></li>
-               <li><a class="menu-list__el" href="#">Reviews</a></li>
-               <li><a class="menu-list__el" href="#">Contact</a></li>
+               <li><a class="menu-list__el" href="#features">Features</a></li>
+               <li><a class="menu-list__el" href="#about">About</a></li>
+               <li><a class="menu-list__el" href="#pricing">Pricing</a></li>
+               <li><a class="menu-list__el" href="#reviews">Reviews</a></li>
+               <li><a class="menu-list__el" href="#contact">Contact</a></li>
             </ul>
          </nav>
          <button type="button" class="menu-btn"> <span></span>
@@ -93,7 +93,7 @@
             </div>
          </div>
       </section>
-      <section class="tabs">
+      <section class="tabs" id="features">
          <div class="tabs__wrap">
             <div class="tab-buttons">
                <button class="tab-btn active" data-tab="tab1">tab 1</button>
@@ -139,7 +139,7 @@
             </div>
          </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
          <div class="about__wrap">
             <h2 class="about__title">WHY THIS IS AWESOME</h2>
             <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -165,7 +165,7 @@
             </div>
          </div>
       </section>
-      <section class="pricing">
+      <section class="pricing" id="pricing">
          <div class="pricing__wrap">
             <h2 class="pricing__title">pricing options</h2>
             <p class="pricing__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -212,7 +212,7 @@
             </div>
          </div>
       </section>
-      <section class="reviews">
+      <section class="reviews" id="reviews">
          <div class="reviews__wrap">
             <h2 class="reviews__title">what our customers are saying</h2>
             <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -270,7 +270,7 @@
             <a href="#" download class="banner-2__btn">Download</a>
          </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
          <div class="contact__wrap">
             <h2 class="contact__title">contact us</h2>
             <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -345,9 +345,19 @@
       });
       const menu = document.querySelector('.site-header__menu');
       const menuBtn = document.querySelector('.menu-btn');
+
+      // Открытие/закрытие по кнопке
       menuBtn.addEventListener('click', () => {
          menu.classList.toggle('open');
          menuBtn.classList.toggle('active');
+      });
+
+      // Закрытие при клике на ссылку
+      menu.querySelectorAll('a').forEach(link => {
+         link.addEventListener('click', () => {
+            menu.classList.remove('open');
+            menuBtn.classList.remove('active');
+         });
       });
       let reviewsSwiper = null;
 
