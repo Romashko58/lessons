@@ -138,12 +138,17 @@ a {
 }
 
 .site-header {
-   padding: 0px calc(50% - 620px);
    background: #000000;
+
+}
+
+.site-header__wrap {
+   max-width: 1240px;
+   width: 100%;
+   margin: 0 auto;
    display: flex;
-   justify-content: space-between;
    align-items: center;
-   gap: 606px;
+   justify-content: space-between;
 }
 
 .site-header__img {
@@ -153,7 +158,6 @@ a {
 .menu__list {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
    align-items: center;
 
 }
@@ -178,6 +182,39 @@ a {
    }
 }
 
+.menu-btn {
+   display: none;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 33px;
+   height: 19px;
+   background: none;
+   border: none;
+   cursor: pointer;
+   padding: 0;
+}
+
+.menu-btn span {
+   height: 3px;
+   width: 100%;
+   background: #fff;
+   border-radius: 2px;
+   transition: all 0.3s ease;
+}
+
+.menu-btn.active span:nth-child(1) {
+   transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.active span:nth-child(2) {
+   opacity: 0;
+}
+
+.menu-btn.active span:nth-child(3) {
+   transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
 .banner {
    padding: 306px 0 185px 0;
    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/background_section-1.png") center/cover no-repeat;
@@ -186,16 +223,16 @@ a {
 .banner__wrap {
    max-width: 1240px;
    margin-left: auto;
-   margin-right: 200px;
+   margin-right: 16%;
    display: flex;
-   flex-wrap: wrap;
    justify-content: space-between;
    align-items: flex-start;
-   gap: 100px;
+   gap: 8%;
 }
 
 .banner__information {
    max-width: 670px;
+   width: 100%;
 }
 
 .information__img {
@@ -250,7 +287,8 @@ a {
 
 .banner__login {
    margin-top: 27px;
-   width: 470px;
+   max-width: 470px;
+   width: 100%;
    background: #FFFFFF;
    border-radius: 10px;
 }
@@ -315,8 +353,14 @@ a {
    margin: 0 auto;
    max-width: 1170px;
    display: flex;
-   flex-wrap: wrap;
-   gap: 30px;
+   justify-content: space-between;
+}
+
+.social__link-wrap {
+   max-width: 670px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
 }
 
 .social-info__text {
@@ -448,7 +492,8 @@ a {
    background: #EC7979;
    display: block;
    position: absolute;
-   left: 500px;
+   left: 50%;
+   transform: translateX(-50%);
    bottom: -40px;
 }
 
@@ -496,7 +541,8 @@ a {
    background: #EC7979;
    display: block;
    position: absolute;
-   left: 500px;
+   left: 50%;
+   transform: translateX(-50%);
    bottom: -40px;
 }
 
@@ -507,8 +553,8 @@ a {
 .pricing__cards {
    margin-top: 79px;
    display: flex;
-   flex-wrap: wrap;
-   gap: 30px;
+   flex-wrap: nowrap;
+   justify-content: space-between;
 }
 
 .pricing__card {
@@ -576,7 +622,8 @@ a {
    background: #EC7979;
    display: block;
    position: absolute;
-   left: 500px;
+   left: 50%;
+   transform: translateX(-50%);
    bottom: -40px;
 }
 
@@ -586,8 +633,8 @@ a {
 
 .reviews__cards {
    display: flex;
-   flex-wrap: wrap;
-   gap: 30px;
+   gap: 3px;
+   justify-content: space-between;
 }
 
 .reviews__card {
@@ -660,7 +707,8 @@ a {
    background: #FFFFFF;
    display: block;
    position: absolute;
-   left: 500px;
+   left: 50%;
+   transform: translateX(-50%);
    bottom: -40px;
 }
 
@@ -713,7 +761,8 @@ a {
    background: #EC7979;
    display: block;
    position: absolute;
-   left: 500px;
+   left: 50%;
+   transform: translateX(-50%);
    bottom: -40px;
 }
 
@@ -728,7 +777,6 @@ a {
 
 .send__wrap {
    display: flex;
-   flex-wrap: wrap;
    gap: 30px;
 }
 
@@ -736,7 +784,8 @@ a {
    display: flex;
    flex-direction: column;
    gap: 50px;
-   flex: 1 1 570px;
+   max-width: 570px;
+   width: 100%;
 
 }
 
@@ -758,7 +807,8 @@ a {
 .send__message {
    display: flex;
    flex-direction: column;
-   flex: 1 1 570px;
+   max-width: 570px;
+   width: 100%;
    align-items: flex-start;
 }
 
@@ -802,7 +852,7 @@ a {
 .footer-social__wrap {
    display: flex;
    flex-wrap: wrap;
-   gap: 32.8px;
+   justify-content: space-between;
 }
 
 .footer-social__img {

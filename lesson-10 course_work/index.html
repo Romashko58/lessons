@@ -4,21 +4,32 @@
 <head>
    <meta charset="UTF-8">
    <title>lesson 10/course_work</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
    <link href="css/style.css" rel="stylesheet" type="text/css" />
+   <link href="css/style-1024.css" rel="stylesheet" type="text/css" />
+   <link href="css/style-824.css" rel="stylesheet" type="text/css" />
+   <link href="css/style-375.css" rel="stylesheet" type="text/css" />
+   <meta name="viewport" content="width=device-width, initial-sale=1">
 </head>
 
 <body>
    <header class="site-header">
-      <a href="#"><img class="site-header__img" src="image/logo.svg" alt="logo image"></a>
-      <nav class="site-header__menu">
-         <ul class="menu__list">
-            <li><a class="menu-list__el" href="#">Features</a></li>
-            <li><a class="menu-list__el" href="#">About</a></li>
-            <li><a class="menu-list__el" href="#">Pricing</a></li>
-            <li><a class="menu-list__el" href="#">Reviews</a></li>
-            <li><a class="menu-list__el" href="#">Contact</a></li>
-         </ul>
-      </nav>
+      <div class="site-header__wrap">
+         <a href="#"><img class="site-header__img" src="image/logo.svg" alt="logo image"></a>
+         <nav class="site-header__menu">
+            <ul class="menu__list">
+               <li><a class="menu-list__el" href="#">Features</a></li>
+               <li><a class="menu-list__el" href="#">About</a></li>
+               <li><a class="menu-list__el" href="#">Pricing</a></li>
+               <li><a class="menu-list__el" href="#">Reviews</a></li>
+               <li><a class="menu-list__el" href="#">Contact</a></li>
+            </ul>
+         </nav>
+         <button type="button" class="menu-btn"> <span></span>
+            <span></span>
+            <span></span>
+         </button>
+      </div>
    </header>
    <main>
       <section class="banner">
@@ -57,27 +68,29 @@
                <p class="social-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
                   Aenean euismod bibendum laoreet.</p>
             </div>
-            <a class="social__link" href="https://www.facebook.com/yourpage" target="_blank">
-               <img class="social__img" src="image/facebook_icon.svg" alt="facebook icon">
-            </a>
-            <a class="social__link" href="https://twitter.com/yourprofile" target="_blank">
-               <img class="social__img" src="image/twitter_icon.svg" alt="twitter icon">
-            </a>
-            <a class="social__link" href="https://www.linkedin.com" target="_blank">
-               <img class="social__img" src="image/linkedin_icon.svg" alt="linkedin icon">
-            </a>
-            <a class="social__link" href="https://www.pinterest.com" target="_blank">
-               <img class="social__img" src="image/pinterest_icon.svg" alt="pinterest icon">
-            </a>
-            <a class="social__link" href="https://www.instagram.com" target="_blank">
-               <img class="social__img" src="image/instagram_icon.svg" alt="instagram icon">
-            </a>
-            <a class="social__link" href="https://github.com" target="_blank">
-               <img class="social__img" src="image/github_icon.svg" alt="github icon">
-            </a>
-            <a class="social__link" href="/rss.xml" target="_blank">
-               <img class="social__img" src="image/rss_icon.svg" alt="rss icon">
-            </a>
+            <div class="social__link-wrap">
+               <a class="social__link" href="https://www.facebook.com/yourpage" target="_blank">
+                  <img class="social__img" src="image/facebook_icon.svg" alt="facebook icon">
+               </a>
+               <a class="social__link" href="https://twitter.com/yourprofile" target="_blank">
+                  <img class="social__img" src="image/twitter_icon.svg" alt="twitter icon">
+               </a>
+               <a class="social__link" href="https://www.linkedin.com" target="_blank">
+                  <img class="social__img" src="image/linkedin_icon.svg" alt="linkedin icon">
+               </a>
+               <a class="social__link" href="https://www.pinterest.com" target="_blank">
+                  <img class="social__img" src="image/pinterest_icon.svg" alt="pinterest icon">
+               </a>
+               <a class="social__link" href="https://www.instagram.com" target="_blank">
+                  <img class="social__img" src="image/instagram_icon.svg" alt="instagram icon">
+               </a>
+               <a class="social__link" href="https://github.com" target="_blank">
+                  <img class="social__img" src="image/github_icon.svg" alt="github icon">
+               </a>
+               <a class="social__link" href="/rss.xml" target="_blank">
+                  <img class="social__img" src="image/rss_icon.svg" alt="rss icon">
+               </a>
+            </div>
          </div>
       </section>
       <section class="tabs">
@@ -203,7 +216,7 @@
          <div class="reviews__wrap">
             <h2 class="reviews__title">what our customers are saying</h2>
             <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="reviews__cards">
+            <div class="reviews__cards " id="reviewsCards">
                <div class="reviews__card">
                   <p class="reviews-card__comment">Lorem ipsum dolor sit amet,
                      consectetur adipisicing elit. Doloribus
@@ -246,8 +259,8 @@
                      </div>
                   </div>
                </div>
+
             </div>
-         </div>
       </section>
       <section class="banner-2">
          <div class="banner-2__wrap">
@@ -313,7 +326,9 @@
          <div class="site-footer__copyright">© 2025 Axure Themes</div>
       </div>
    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
    <script>
+
       const buttons = document.querySelectorAll(".tab-btn");
       const contents = document.querySelectorAll(".tab-content");
 
@@ -327,6 +342,12 @@
             btn.classList.add("active");
             document.getElementById(btn.dataset.tab).classList.add("active");
          });
+      });
+      const menu = document.querySelector('.site-header__menu');
+      const menuBtn = document.querySelector('.menu-btn');
+      menuBtn.addEventListener('click', () => {
+         menu.classList.toggle('open');
+         menuBtn.classList.toggle('active');
       });
 
    </script>

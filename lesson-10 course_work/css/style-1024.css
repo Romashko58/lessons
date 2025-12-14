@@ -1,0 +1,250 @@
+@media (max-width: 1024px) {
+
+   .site-footer__copyright,
+   .contact__text,
+   .banner-2__text,
+   .commentator-info__post,
+   .reviews-card__comment,
+   .card__text,
+   .social-info__text,
+   .information__text {
+      font-size: 14px;
+   }
+
+   .site-header__wrap {
+      max-width: 888px;
+   }
+
+   .menu-list__el {
+      padding: 28px 25px;
+   }
+
+   .banner {
+      padding: 137px 0 106px;
+   }
+
+   .banner__wrap {
+      gap: 4%;
+      margin-right: 2.25%;
+      max-width: 888.4px;
+   }
+
+   .information__title {
+      font-size: 36px;
+   }
+
+   .information__img {
+      width: 112px;
+   }
+
+   .information__btn {
+      margin-top: 31px;
+      width: 183px;
+      height: 50px;
+      padding: 16px;
+   }
+
+   .banner__information {
+      max-width: 454px;
+   }
+
+   .banner__login {
+      width: 398px;
+   }
+
+   .social {
+      padding: 13px 0;
+   }
+
+   .social__wrap,
+   .tabs__wrap,
+   .about__wrap,
+   .pricing__wrap,
+   .reviews__wrap,
+   .banner-2__wrap,
+   .contact__wrap {
+      max-width: 992px;
+   }
+
+   .social__img {
+      width: 64px;
+   }
+
+   .social__link-wrap {
+      max-width: 570px;
+   }
+
+
+   .tabs {
+      padding-top: 50px;
+   }
+
+   .tab-btn {
+      padding: 10px 67px;
+   }
+
+   .tab-content__img {
+      max-width: 398px;
+   }
+
+   .tab-content__wrap {
+      padding: 38px 26px 0 85px;
+   }
+
+   .tab-content__text {
+      margin-top: 43px;
+   }
+
+   .tab-content__text-2 {
+      margin-top: 26px;
+   }
+
+   .tab-content__btn {
+      margin-top: 38px;
+      width: 232px;
+   }
+
+   .about {
+      padding-bottom: 60px;
+   }
+
+   .about__cards {
+      margin-top: 66px;
+      gap: 20px;
+   }
+
+   .about-cards__card {
+      gap: 45px;
+   }
+
+   .card__img {
+      width: 80px;
+   }
+
+   .pricing {
+      padding: 82px 0 50px 0;
+   }
+
+   .pricing__cards {
+      margin-top: 50px;
+   }
+
+   .pricing__card {
+      max-width: 317px;
+   }
+
+   .pricing-card__title {
+      padding: 15px 0;
+   }
+
+   .pricing-card__price {
+      padding: 26.5px 0;
+   }
+
+   .pricing-card__subtitle,
+   .pricing-card__el {
+      padding: 12px 0;
+   }
+
+   .reviews {
+      padding: 107px 0 57px;
+   }
+
+   .reviews__card {
+      max-width: 317px;
+   }
+
+   .reviews-card__comment {
+      margin-top: 32px;
+      padding: 50px 25px;
+   }
+
+
+   .commentator__img {
+      width: 64px;
+   }
+
+   .commentator-info__name,
+   .card__title,
+   .social-info__title {
+      font-size: 18px;
+   }
+
+   .banner-2 {
+      padding: 70px 0 50px;
+   }
+
+   .banner-2__btn {
+      margin-top: 32px;
+      width: 318px;
+   }
+
+   .contact {
+      padding: 67px 0 50px;
+   }
+
+   .contact__title,
+   .banner-2__title,
+   .reviews__title,
+   .pricing__title,
+   .about__title,
+   .tab-content__title {
+      font-size: 24px;
+   }
+
+   .contact__title::before,
+   .about__title::before,
+   .reviews__title::before,
+   .pricing__title::before,
+   .banner-2__title::before {
+      content: "";
+      width: 143px;
+   }
+
+
+   .contact__send,
+   .contact__text,
+   .banner-2__text,
+   .reviews__text,
+   .pricing__text,
+   .about__text {
+      margin-top: 72px;
+
+   }
+
+   .send__wrap {
+      gap: 20px;
+   }
+
+   .send__input,
+   .send__message {
+      max-width: 486px;
+
+   }
+
+   .send__message textarea,
+   .send__field input {
+      font-size: 16px;
+   }
+
+
+   .send__btn {
+      width: 318px;
+   }
+
+   .site-footer {
+      padding: 35px 0 30px;
+   }
+
+   .site-footer__wrap {
+      max-width: 482px;
+   }
+
+   .footer-social__img {
+      width: 45px;
+   }
+
+   .site-footer__copyright {
+      margin-top: 38px;
+   }
+}
