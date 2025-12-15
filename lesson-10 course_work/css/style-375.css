@@ -1,0 +1,162 @@
+@media (max-width: 375px) {
+
+   .site-header__wrap {
+      max-width: 280px;
+      padding: 17px 0;
+   }
+
+   .banner {
+      padding: 84px 0 50px;
+   }
+
+   .banner__wrap {
+      max-width: 288px;
+   }
+
+   .banner__information {
+      text-align: center;
+   }
+
+
+   .information__btn {
+      width: 288px;
+      height: 50px;
+   }
+
+   .banner__login {
+      max-width: 288px;
+   }
+
+   .login__title {
+      font-size: 14px;
+   }
+
+   .login__wrap {
+      padding: 43px 24px 50px;
+   }
+
+   .social {
+      padding: 31px 0 44px;
+   }
+
+   .social__wrap {
+      max-width: 286px;
+   }
+
+   .social-info__text {
+      margin-top: 26px;
+   }
+
+   .social__link-wrap {
+      margin-top: 32px;
+      max-width: 286px;
+   }
+
+   .social__img {
+      width: 28px;
+   }
+
+   .tabs {
+      padding-top: 41px;
+   }
+
+   .tabs__wrap {
+      max-width: 288px;
+   }
+
+   .tab-content__title {
+      font-size: 18px;
+   }
+
+   .tab-content__text,
+   .tab-content__text-2 {
+      font-size: 13px;
+   }
+
+   .tab-content__btn {
+      width: 243px;
+      margin-top: 29px;
+   }
+
+   .about__cards {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .about-cards__card {
+      margin-top: 30px;
+      max-width: 288px;
+   }
+
+   .pricing {
+      padding: 60px 0 26px;
+   }
+
+   .pricing__cards {
+      margin-top: 24px;
+   }
+
+   .pricing__card {
+      max-width: 288px;
+   }
+
+   .reviews {
+      padding: 31px 0;
+   }
+
+   .reviews__wrap {
+      max-width: 288px;
+   }
+
+   .reviews__card {
+      max-width: 288px;
+
+   }
+
+   .banner-2 {
+      padding: 58px 0;
+   }
+
+   .banner-2__wrap,
+   .contact__wrap {
+      max-width: 288px;
+   }
+
+   .banner-2__btn {
+      margin-top: 60px;
+      width: 287px;
+   }
+
+   .contact {
+      padding: 40px;
+   }
+
+   .contact__send {
+      margin-top: 64px;
+
+   }
+
+   .send__wrap {
+      flex-direction: column;
+      gap: 50px;
+
+   }
+
+   .send__message {
+      height: 196px;
+   }
+
+   .send__btn {
+      max-width: 272px;
+      height: 50px;
+   }
+
+   .footer-social__img {
+      width: 26px;
+   }
+
+   .site-footer__wrap {
+      max-width: 288px;
+   }
+}
